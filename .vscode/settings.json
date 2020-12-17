@@ -3,4 +3,5 @@
     "eleventy",
     "shortcode"
   ],
+  "editor.formatOnSave": true
 }

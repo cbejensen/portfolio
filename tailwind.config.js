@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: colors.gray[100],
-        primary: colors.blue[500]
+        bg: colors.blueGray[200],
+        black: colors.blueGray[900],
+        primary: colors.blue[500],
+        orange: colors.orange,
       },
       borderWidth: {
         16: '16px',
