@@ -1,0 +1,22 @@
+---
+layout: layouts/base
+---
+
+<body
+  class="bg-bg px-8 text-black sm:px-16 lg:px-32 py-8 sm:py-16 font-sans flex flex-col min-h-screen"
+>
+  <main class="flex-1">
+    {% include intro.html %}
+    <!-- prettier new line -->
+    <!-- {% for section in data.sections %}
+    <h1>SECTION!</h1>
+    <section>{% include section.md %}</section>
+    {% endfor %}  -->
+    {%- for post in collections.projects -%}
+    <p>{{ post.data.title }}</p>
+    {%- endfor -%}
+    <!-- prettier new line -->
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>

@@ -1,6 +1,6 @@
 // const colors = require('tailwindcss/colors')
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   // purge: [],
@@ -8,21 +8,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: colors.blueGray[200],
-        black: colors.blueGray[900],
-        primary: colors.blue[500],
-        orange: colors.orange,
+        bg: colors.gray[200],
+        black: colors.gray[900],
+        primary: "var(--color-primary)",
+        profileBorder: "var(--color-profile-border)",
       },
       borderWidth: {
-        16: '16px',
+        16: "16px",
       },
     },
     fontFamily: {
-      sans: ['Helvetica Neue', ...defaultTheme.fontFamily.sans],
+      sans: ["Helvetica Neue", ...defaultTheme.fontFamily.sans],
     },
   },
-  // variants: {
-  //   extend: {},
-  // },
+  variants: {
+    extend: {
+      margin: ["last"],
+    },
+  },
   // plugins: [],
-}
+};

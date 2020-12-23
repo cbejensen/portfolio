@@ -15,7 +15,7 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(
     to bottom right,
-    theme('colors.primary'),
-    theme('colors.green.500')
+    theme("colors.primary"),
+    theme("colors.green.500")
   );
 }
