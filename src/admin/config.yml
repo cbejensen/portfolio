@@ -6,8 +6,10 @@ media_folder: "src/assets"
 public_folder: "/assets"
 
 collections:
-  - name: "sections" # Used in routes, e.g., /admin/collections/blog
+  - name: "sections" # Used in routes, e.g., /admin/collections/sections
     label: "Sections" # Used in the UI
+    label_singular: "Section"
+    description: "The top-level categories, i.e. 'Experience', 'Education', 'References', etc."
     folder: "src/sections" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
@@ -19,3 +21,24 @@ collections:
           options: ["list", "timeline"],
         }
       - { label: "Title", name: "title", widget: "string" }
+  - name: "entries"
+    label: "Entries"
+    label_singular: "Entry"
+    description: "Anything that you want to put on your portfolio"
+    folder: "src/entries"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Section",
+          name: "tags",
+          widget: "relation",
+          collection: "sections",
+          value_field: "title",
+          search_fields: ["title"],
+          multiple: true,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Skills", name: "skills", widget: "list" }
