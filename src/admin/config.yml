@@ -18,7 +18,11 @@ collections:
           label: "Layout",
           name: "layout",
           widget: "select",
-          options: ["list", "timeline"],
+          options:
+            [
+              { label: "List", value: "layouts/sections/list" },
+              { label: "Timeline", value: "layouts/sections/timeline" },
+            ],
         }
       - { label: "Title", name: "title", widget: "string" }
   - name: "entries"
