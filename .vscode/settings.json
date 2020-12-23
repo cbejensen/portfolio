@@ -1,7 +1,3 @@
 {
-  "cSpell.words": [
-    "eleventy",
-    "shortcode"
-  ],
-  "editor.formatOnSave": true
+  "cSpell.words": ["eleventy", "shortcode"]
 }

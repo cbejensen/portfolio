@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-4xl;
+    @apply text-6xl;
   }
   h2 {
     @apply text-2xl font-thin;
@@ -18,4 +18,8 @@
     theme("colors.primary"),
     theme("colors.green.500")
   );
+}
+
+.test {
+  color: red;
 }

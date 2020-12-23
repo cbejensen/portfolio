@@ -3,8 +3,9 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  // purge: [],
-  // darkMode: false, // or 'media' or 'class'
+  purge: {
+    content: ["./**/*.html", "./**/*.11ty.js"],
+  },
   theme: {
     extend: {
       colors: {
@@ -18,7 +19,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Helvetica Neue", ...defaultTheme.fontFamily.sans],
+      sans: ["Avenir Next", "Helvetica Neue", ...defaultTheme.fontFamily.sans],
     },
   },
   variants: {
@@ -26,5 +27,6 @@ module.exports = {
       margin: ["last"],
     },
   },
+  // darkMode: false, // or 'media' or 'class'
   // plugins: [],
 };

@@ -1,23 +1,23 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A site for displaying one's work",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "build": "cross-env NODE_ENV=production eleventy"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Christian Jensen",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "cross-env": "^7.0.3",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
     "husky": "^4.3.6",
     "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0"
-  },
-  "dependencies": {
-    "eleventy-plugin-tailwindcss": "^0.2.6"
+    "pretty-quick": "^3.1.0",
+    "tailwindcss": "^2.0.2"
   },
   "husky": {
     "hooks": {
