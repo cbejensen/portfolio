@@ -2,29 +2,75 @@ backend:
   # Use Netlify Identity as backend
   name: git-gateway
   branch: master
-media_folder: "src/assets"
-public_folder: "/assets"
+media_folder: src/assets
+public_folder: /assets
 
 collections:
-  - name: "sections" # Used in routes, e.g., /admin/collections/sections
-    label: "Sections" # Used in the UI
-    label_singular: "Section"
-    description: "The top-level categories, i.e. 'Experience', 'Education', 'References', etc."
-    folder: "src/sections" # The path to the folder where the documents are stored
+  - name: sections # Used in routes, e.g., /admin/collections/sections
+    label: Sections # Used in the UI
+    label_singular: Section
+    description: The top-level categories, i.e. 'Experience', 'Education', 'References', etc.
+    folder: src/sections # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
     fields: # The fields for each document, usually in front matter
       - {
-          label: "Layout",
-          name: "layout",
-          widget: "select",
+          label: Layout,
+          name: layout,
+          widget: select,
           options:
             [
-              { label: "List", value: "layouts/sections/list" },
-              { label: "Timeline", value: "layouts/sections/timeline" },
+              { label: List, value: layouts/sections/list },
+              { label: Timeline, value: layouts/sections/timeline },
             ],
         }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: Title, name: title, widget: string }
+  - name: info
+    label: Info
+    create: false
+    editor:
+      preview: false
+    files:
+      - name: data
+        label: Data
+        file: src/_data/dataNetlify.json
+        description: Da Data
+        fields:
+          - name: title
+            label: Title
+            widget: string
+
+  #         firstName: "Christian",
+  # lastName: "Jensen",
+  # intro:
+  #   "Hello! My name is Christian, and I am a web developer. I graduated from DevMountain - a coding bootcamp - in 2015, and have been building things ever since. I currently work with FedEx using Angular. I also have a lot of experience with React, and love JavaScript in general.\n\nIf you are interested in working with me, please reach out!",
+  # sections: [
+  #   {
+  #     type: "default",
+  #     title: "Projects",
+  #     items: [
+  #       {
+  #         title: "Wishfull",
+  #         subtitle: "Web app for wish lists",
+  #       },
+  #     ],
+  #   },
+  #   {
+  #     type: "timeline",
+  #     title: "Experience",
+  #     items: [
+  #       {
+  #         title: "FedEx",
+  #         subtitle: "Jan 2019 - Present",
+  #       },
+  #     ],
+  #   },
+  # ],
+  # colors: {
+  #   primary: colors.blue[500],
+  #   profileBorder: colors.orange[700],
+  # },
+
   - name: "entries"
     label: "Entries"
     label_singular: "Entry"

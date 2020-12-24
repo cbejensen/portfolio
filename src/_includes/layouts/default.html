@@ -8,13 +8,7 @@ layout: layouts/base
   <main class="flex-1">
     {% include intro.html %}
     <!-- prettier new line -->
-    <!-- {% for section in data.sections %}
-    <h1>SECTION!</h1>
-    <section>{% include section.md %}</section>
-    {% endfor %}  -->
-    {%- for post in collections.projects -%}
-    <p>{{ post.data.title }}</p>
-    {%- endfor -%}
+    {% include sections.html %}
     <!-- prettier new line -->
     {{ content }}
   </main>
