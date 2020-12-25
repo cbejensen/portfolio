@@ -6,71 +6,76 @@ media_folder: src/assets
 public_folder: /assets
 
 collections:
-  - name: sections # Used in routes, e.g., /admin/collections/sections
-    label: Sections # Used in the UI
-    label_singular: Section
-    description: The top-level categories, i.e. 'Experience', 'Education', 'References', etc.
-    folder: src/sections # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template
-    fields: # The fields for each document, usually in front matter
-      - {
-          label: Layout,
-          name: layout,
-          widget: select,
-          options:
-            [
-              { label: List, value: layouts/sections/list },
-              { label: Timeline, value: layouts/sections/timeline },
-            ],
-        }
-      - { label: Title, name: title, widget: string }
-  - name: info
-    label: Info
+  - name: general
+    label: General
     create: false
     editor:
       preview: false
     files:
-      - name: data
-        label: Data
+      - name: general
+        label: General
         file: src/_data/dataNetlify.json
-        description: Da Data
+        description: General info
         fields:
-          - name: title
-            label: Title
+          - name: firstName
+            label: First Name
             widget: string
-
-  #         firstName: "Christian",
-  # lastName: "Jensen",
-  # intro:
-  #   "Hello! My name is Christian, and I am a web developer. I graduated from DevMountain - a coding bootcamp - in 2015, and have been building things ever since. I currently work with FedEx using Angular. I also have a lot of experience with React, and love JavaScript in general.\n\nIf you are interested in working with me, please reach out!",
-  # sections: [
-  #   {
-  #     type: "default",
-  #     title: "Projects",
-  #     items: [
-  #       {
-  #         title: "Wishfull",
-  #         subtitle: "Web app for wish lists",
-  #       },
-  #     ],
-  #   },
-  #   {
-  #     type: "timeline",
-  #     title: "Experience",
-  #     items: [
-  #       {
-  #         title: "FedEx",
-  #         subtitle: "Jan 2019 - Present",
-  #       },
-  #     ],
-  #   },
-  # ],
-  # colors: {
-  #   primary: colors.blue[500],
-  #   profileBorder: colors.orange[700],
-  # },
-
+          - name: lastName
+            label: last Name
+            widget: string
+          - name: sections
+            label: Sections
+            widget: list
+            field: { name: title, label: Title, widget: string }
+          - name: colors
+            label: Colors
+            widget: object
+            fields:
+              - name: primary
+                label: Primary
+                widget: color 
+              - name: profileBorder
+                label: Profile Image Border
+                widget: color
+                enableAlpha: true
+      - name: intro
+        label: Introduction
+        file: src/_includes/intro.md
+        description: General info
+        fields:
+          - name: firstName
+            label: First Name
+            widget: string
+          - name: lastName
+            label: last Name
+            widget: string
+          - name: colors
+            label: Colors
+            widget: object
+            fields:
+              - name: primary
+                label: Primary
+                widget: color 
+              - name: profileBorder
+                label: Profile Image Border
+                widget: color
+                enableAlpha: true
+  # - name: sections # Used in routes, e.g., /admin/collections/sections
+  #   label: Sections # Used in the UI
+  #   label_singular: Section
+  #   description: The top-level categories, i.e. 'Experience', 'Education', 'References', etc.
+  #   folder: src/sections # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template
+  #   fields: # The fields for each document, usually in front matter
+  #     - label: Layout
+  #       name: layout
+  #       widget: select,
+  #       options:
+  #         [
+  #           { label: List, value: layouts/sections/list },
+  #           { label: Timeline, value: layouts/sections/timeline },
+  #         ]
   - name: "entries"
     label: "Entries"
     label_singular: "Entry"
@@ -83,10 +88,10 @@ collections:
           label: "Section",
           name: "tags",
           widget: "relation",
-          collection: "sections",
-          value_field: "title",
-          search_fields: ["title"],
-          multiple: true,
+          collection: "general",
+          value_field: "general.sections.*.title",
+          display_fields: ["general.sections.*.title"],
+          search_fields: ["general.sections.*.title"],
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
