@@ -9,10 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          light: "var(--color-primary-light)",
+          DEFAULT: "var(--color-primary)",
+        },
+        accent: "var(--color-accent)",
         bg: colors.gray[200],
         black: colors.gray[900],
-        primary: "var(--color-primary)",
-        profileBorder: "var(--color-profile-border)",
       },
       borderWidth: {
         16: "16px",

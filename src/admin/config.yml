@@ -43,10 +43,12 @@ collections:
               - name: primary
                 label: Primary
                 widget: color
-              - name: profileBorder
-                label: Profile Image Border
+              - name: primaryLight
+                label: Primary Light
                 widget: color
-                enableAlpha: true
+              - name: accent
+                label: Accent
+                widget: color
       - name: intro
         label: Introduction
         file: src/_includes/intro.md
