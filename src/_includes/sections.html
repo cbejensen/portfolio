@@ -1,0 +1,4 @@
+{% for sectionTitle in data.sections %}
+<h2>{{ sectionTitle }}</h2>
+{% for entry in collections[sectionTitle] %} {{ entry.templateContent }} {%
+endfor %} {% endfor %}

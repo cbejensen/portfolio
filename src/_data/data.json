@@ -6,7 +6,8 @@
     "Experience"
   ],
   "colors": {
-    "primary": "#296f5c",
-    "profileBorder": "#c50b8f"
+    "primary": "#039BE5",
+    "primaryLight": "#63CCFF",
+    "accent": "orange"
   }
 }

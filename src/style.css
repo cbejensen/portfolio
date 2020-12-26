@@ -9,17 +9,19 @@
   h2 {
     @apply text-2xl font-thin;
   }
+  a {
+    @apply underline text-primary hover:text-accent;
+  }
+  P + p {
+    @apply mt-4;
+  }
 }
 
 .gradient-border {
   border-image-slice: 1;
   border-image-source: linear-gradient(
     to bottom right,
-    theme("colors.primary"),
-    theme("colors.green.500")
+    theme("colors.primary.DEFAULT"),
+    theme("colors.primary.light")
   );
-}
-
-.test {
-  color: red;
 }
