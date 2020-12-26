@@ -29,6 +29,13 @@ collections:
             label: Sections
             label_singular: Section
             widget: list
+          - name: test
+            label: Test
+            widget: list
+            fields:
+              - name: fieldName
+                label: Field Name
+                widget: string
           - name: colors
             label: Colors
             widget: object
@@ -45,8 +52,11 @@ collections:
         file: src/_includes/intro.md
         description: A brief paragraph or two about you
         fields:
+          - name: firstName
+            label: First Name
+            widget: string
           - name: body
-            label: Introduction
+            label: Body
             buttons: [bold, italic, link, quote, bulleted-list, numbered-list]
             editor_components: []
             widget: markdown

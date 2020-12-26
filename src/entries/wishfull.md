@@ -4,15 +4,11 @@ tags:
 title: Wishfull
 subtitle: A wishlist web app
 description: |-
-  I made this web site.
-
-  **More description stuff.**
-
-  *Italics.*
-
-  > Blockquote
+  I am the description
 skills:
   - react
   - firebase
   - bootstrap
 ---
+
+I am the body for {{ title }}
