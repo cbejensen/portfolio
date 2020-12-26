@@ -5,6 +5,8 @@ backend:
 media_folder: src/assets
 public_folder: /assets
 
+publish_mode: editorial_workflow
+
 collections:
   - name: general
     label: General
@@ -14,8 +16,8 @@ collections:
     files:
       - name: general
         label: General
-        file: src/_data/dataNetlify.json
-        description: General info
+        file: src/_data/data.json
+        description: Just some basic info
         fields:
           - name: firstName
             label: First Name
@@ -25,15 +27,15 @@ collections:
             widget: string
           - name: sections
             label: Sections
+            label_singular: Section
             widget: list
-            field: { name: title, label: Title, widget: string }
           - name: colors
             label: Colors
             widget: object
             fields:
               - name: primary
                 label: Primary
-                widget: color 
+                widget: color
               - name: profileBorder
                 label: Profile Image Border
                 widget: color
@@ -41,59 +43,30 @@ collections:
       - name: intro
         label: Introduction
         file: src/_includes/intro.md
-        description: General info
+        description: A brief paragraph or two about you
         fields:
-          - name: firstName
-            label: First Name
-            widget: string
-          - name: lastName
-            label: last Name
-            widget: string
-          - name: colors
-            label: Colors
-            widget: object
-            fields:
-              - name: primary
-                label: Primary
-                widget: color 
-              - name: profileBorder
-                label: Profile Image Border
-                widget: color
-                enableAlpha: true
-  # - name: sections # Used in routes, e.g., /admin/collections/sections
-  #   label: Sections # Used in the UI
-  #   label_singular: Section
-  #   description: The top-level categories, i.e. 'Experience', 'Education', 'References', etc.
-  #   folder: src/sections # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   slug: "{{slug}}" # Filename template
-  #   fields: # The fields for each document, usually in front matter
-  #     - label: Layout
-  #       name: layout
-  #       widget: select,
-  #       options:
-  #         [
-  #           { label: List, value: layouts/sections/list },
-  #           { label: Timeline, value: layouts/sections/timeline },
-  #         ]
-  - name: "entries"
-    label: "Entries"
-    label_singular: "Entry"
-    description: "Anything that you want to put on your portfolio"
-    folder: "src/entries"
+          - name: intro
+            label: Intro
+            buttons: [bold, italic, link, quote, bulleted-list, numbered-list]
+            editor_components: []
+            widget: markdown
+  - name: entries
+    label: Entries
+    label_singular: Entry
+    description: Anything that you want to put on your portfolio
+    folder: src/entries
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "Section",
-          name: "tags",
-          widget: "relation",
-          collection: "general",
-          value_field: "general.sections.*.title",
-          display_fields: ["general.sections.*.title"],
-          search_fields: ["general.sections.*.title"],
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
-      - { label: "Skills", name: "skills", widget: "list" }
+      - label: Section
+        name: tags
+        widget: relation
+        collection: general
+        file: general
+        value_field: sections
+        display_fields: [sections]
+        search_fields: [sections]
+      - { label: Title, name: title, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string }
+      - { label: Skills, name: skills, widget: list }
+      - { label: Description, name: description, widget: markdown }
