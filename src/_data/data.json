@@ -1,0 +1,12 @@
+{
+  "firstName": "Christian",
+  "lastName": "Jensen",
+  "sections": [
+    "Projects",
+    "Experience"
+  ],
+  "colors": {
+    "primary": "#c128a4",
+    "profileBorder": "#437b4e"
+  }
+}
