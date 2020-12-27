@@ -1,0 +1,12 @@
+{% for entry in entries %}
+<section class="mt-8 first:mt-0">
+  <h3>{{ entry.data.title }}</h3>
+  <div class="text-gray-500">{{ entry.data.subtitle }}</div>
+  <ul class="list-none">
+    {% for skill in entry.data.skills %}
+      <span class="inline-block mr-2 my-2 px-2 py-1 text-sm bg-primary text-bg p-2 rounded-md">{{ skill }}</span>
+    {% endfor %}
+  </ul>
+  {{ entry.data.image }} {{ entry.templateContent }}
+</section>
+{% endfor %}

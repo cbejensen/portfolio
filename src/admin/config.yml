@@ -73,6 +73,5 @@ collections:
         search_fields: [sections.*]
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string }
-      - { label: Description, name: body, widget: markdown }
       - { label: Skills, name: skills, widget: list }
       - { label: Image, name: image, widget: image }

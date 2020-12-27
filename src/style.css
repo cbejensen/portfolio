@@ -7,13 +7,19 @@
     @apply text-6xl;
   }
   h2 {
-    @apply text-2xl font-thin;
+    @apply text-5xl font-thin;
+  }
+  h3 {
+    @apply text-3xl font-semibold;
   }
   a {
-    @apply underline text-primary hover:text-accent;
+    @apply underline text-primary;
   }
   P + p {
     @apply mt-4;
+  }
+  ul {
+    @apply list-disc list-inside;
   }
 }
 

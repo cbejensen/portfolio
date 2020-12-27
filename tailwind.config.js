@@ -14,7 +14,7 @@ module.exports = {
           DEFAULT: "var(--color-primary)",
         },
         accent: "var(--color-accent)",
-        bg: colors.gray[200],
+        bg: colors.gray[100],
         black: colors.gray[900],
       },
       borderWidth: {
@@ -27,7 +27,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      margin: ["last"],
+      margin: ["first", "last"],
     },
   },
   // darkMode: false, // or 'media' or 'class'

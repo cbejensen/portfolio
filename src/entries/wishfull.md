@@ -3,15 +3,12 @@ tags:
   - Projects
 title: Wishfull
 subtitle: A wishlist web app
-description: |-
-  I am the description
 skills:
-  - react
-  - firebase
-  - bootstrap
+  - React
+  - Firebase
+  - Bootstrap
 ---
 
-I am the body for {{ title }}
-
-## hey
-_testing_
+A web app for sharing wishlists, Wishfull is joyfully used by my family to this day.
+*  Complex view logic, including wish fulfillments that are visible to everyone but the one who made the wish.
+*  Real time updates.
