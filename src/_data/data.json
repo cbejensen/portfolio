@@ -1,10 +1,7 @@
 {
   "firstName": "Christian",
   "lastName": "Jensen",
-  "sections": [
-    "Projects",
-    "Tutorials"
-  ],
+  "sections": ["projects", "tutorials"],
   "colors": {
     "primary": "#039BE5",
     "primaryLight": "#63CCFF",
