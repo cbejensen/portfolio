@@ -6,6 +6,7 @@ skills:
   - React
   - Firebase
   - Bootstrap
+image: /assets/wishfull.png
 ---
 
 A web app for sharing wishlists, Wishfull is joyfully used by my family to this day.
