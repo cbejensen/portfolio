@@ -3,7 +3,12 @@
   "lastName": "Jensen",
   "phone": "801-633-8055",
   "email": "cbejensen@gmail.com",
-  "sections": ["projects", "tutorials", "experience", "education"],
+  "sections": [
+    "projects",
+    "tutorials",
+    "experience",
+    "education"
+  ],
   "colors": {
     "primary": "#039BE5",
     "primaryLight": "#63CCFF",
@@ -12,15 +17,19 @@
   "socialIcons": [
     {
       "name": "github",
-      "link": "https://github.com/cbejensen"
-    },
-    {
-      "name": "linkedin",
-      "link": "https://www.linkedin.com/in/cbejensen/"
+      "link": "https://github.com/cbejensen",
+      "socialIcon": {
+        "name": "test name",
+        "link": "test link"
+      }
     },
     {
       "name": "twitter",
-      "link": "https://twitter.com/cbejensen"
+      "link": "https://twitter.com/cbejensen",
+      "socialIcon": {
+        "name": "test 2 name",
+        "link": "test 2 link"
+      }
     }
   ]
 }
