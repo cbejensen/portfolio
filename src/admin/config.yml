@@ -25,6 +25,12 @@ collections:
           - name: lastName
             label: last Name
             widget: string
+          - name: phone
+            label: Phone Number
+            widget: string
+          - name: email
+            label: Email
+            widget: string
           - name: sections
             label: Sections
             label_singular: Section
@@ -45,6 +51,20 @@ collections:
                 label: Accent
                 widget: color
                 allowInput: true
+          - name: socialIcons
+            label: Social Icons
+            widget: list
+            field:
+              name: socialIcon
+              label: Social Icon
+              widget: object
+              fields:
+                - name: name
+                  label: Name
+                  widget: string
+                - name: link
+                  label: Link
+                  widget: string
       - name: intro
         label: Introduction
         file: src/_includes/intro.md
@@ -75,3 +95,4 @@ collections:
       - { label: Subtitle, name: subtitle, widget: string }
       - { label: Skills, name: skills, widget: list }
       - { label: Image, name: image, widget: image }
+      - { label: Image Alt Text, name: imageAltText, widget: string }

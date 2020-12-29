@@ -18,8 +18,8 @@
   {% if entry.data.image %}
   <img
     src="{{ entry.data.image }}"
-    alt=""
-    class="hidden md:block entry__img sm:ml-4 rounded-xl opacity-50 self-center"
+    alt="{{ entry.data.imageAltText }}"
+    class="hidden md:block entry__img sm:ml-4 opacity-50 self-center"
   />
   {% endif %}
 </section>
