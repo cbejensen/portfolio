@@ -19,7 +19,7 @@
   a.button {
     @apply no-underline text-current;
   }
-  P + p {
+  p + p {
     @apply mt-4;
   }
   ul {
