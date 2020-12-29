@@ -25,19 +25,26 @@
   ul {
     @apply list-disc list-inside;
   }
-  .entry__content ul {
-    @apply mt-2;
-  }
-  .entry__img {
-    max-width: min(50%, 200px);
-  }
 }
 
-.gradient-border {
+body > header {
   border-image-slice: 1;
   border-image-source: linear-gradient(
     to bottom right,
     theme("colors.primary.DEFAULT"),
     theme("colors.primary.light")
   );
+}
+
+.profile-image__wrap {
+  min-width: 200px;
+  max-width: 40vw;
+}
+
+.entry__content ul {
+  @apply mt-2;
+}
+
+.entry__img {
+  max-width: min(50%, 200px);
 }

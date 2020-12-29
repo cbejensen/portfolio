@@ -1,16 +1,16 @@
-<header class="relative gradient-border border-solid border-16 p-8 sm:p-16">
+<header class="relative border-solid border-16 p-8 md:p-16">
   <h1
-    class="text-center sm:text-left sm:whitespace-nowrap sm:block bg-bg top-0 sm:absolute sm:px-4 transform sm:-translate-y-6 sm:-translate-x-4 sm:leading-8"
+    class="text-center md:text-left md:whitespace-nowrap md:block bg-bg top-0 md:absolute md:px-4 transform md:-translate-y-6 md:-translate-x-4 md:leading-8"
   >
     {{ data.firstName }} {{ data.lastName }}
   </h1>
-  <figure class="flex flex-col sm:flex-row-reverse items-center">
+  <figure class="flex flex-col md:flex-row-reverse items-center">
     <div
-      class="w-40 m-auto my-8 sm:m-0 border-solid border-4 border-r-4 border-accent overflow-hidden rounded-full"
+      class="profile-image__wrap flex-1 m-auto my-8 md:m-0 border-solid border-4 border-r-4 border-accent overflow-hidden rounded-full"
     >
       <img src="assets/images/profile.jpg" alt="" />
     </div>
-    <div class="flex-1 sm:mr-8 leading-loose max-w-prose">
+    <div class="md:mr-8 leading-loose max-w-prose">
       {% capture intro %}{% include intro.md %}{% endcapture %} {{ intro | md }}
     </div>
   </figure>
