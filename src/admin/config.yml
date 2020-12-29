@@ -5,8 +5,6 @@ backend:
 media_folder: src/assets
 public_folder: /assets
 
-publish_mode: editorial_workflow
-
 collections:
   - name: general
     label: General
@@ -24,6 +22,12 @@ collections:
             widget: string
           - name: lastName
             label: last Name
+            widget: string
+          - name: phone
+            label: Phone Number
+            widget: string
+          - name: email
+            label: Email
             widget: string
           - name: sections
             label: Sections
@@ -45,6 +49,19 @@ collections:
                 label: Accent
                 widget: color
                 allowInput: true
+          - name: socialIcons
+            label: Social Icons
+            label_singular: Social Icon
+            hint: >
+              The name of each social icon should match the name of an SVG file in `/assets/icons`. For example, if you name your icon "github", you need to have an `assets/icons/github.svg` file.
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: link
+                label: Link
+                widget: string
       - name: intro
         label: Introduction
         file: src/_includes/intro.md
@@ -75,3 +92,4 @@ collections:
       - { label: Subtitle, name: subtitle, widget: string }
       - { label: Skills, name: skills, widget: list }
       - { label: Image, name: image, widget: image }
+      - { label: Image Alt Text, name: imageAltText, widget: string }
