@@ -1,4 +1,27 @@
-<footer class="test leading-5">
-  <p>Footer</p>
-  <p>Test</p>
+<footer class="test leading-5 flex justify-between">
+  <div class="leading-loose">
+    <!-- <button>Resume</button> -->
+    {% if data.phone %}
+    <a href="tel:{{ data.phone }}" class="button hover:text-primary mr-4"
+      >{{ data.phone }}</a
+    >
+    {% endif %} {% if data.email %}
+    <a
+      href="mailto:{{ data.email }}"
+      class="button hover:text-primary"
+      target="_blank"
+      >{{ data.email }}</a
+    >
+    {% endif %}
+  </div>
+  <div class="flex flex-wrap items-center justify-end">
+    {% for icon in data.socialIcons %}
+    <a
+      class="button ml-4 first:ml-0 transform hover:rotate-12 hover:scale-110 hover:text-primary"
+      href="{{ icon.link }}"
+      target="_blank"
+      >{% icon icon.name %}</a
+    >
+    {% endfor %}
+  </div>
 </footer>

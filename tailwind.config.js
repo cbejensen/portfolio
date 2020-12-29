@@ -17,6 +17,9 @@ module.exports = {
         bg: colors.gray[100],
         black: colors.gray[900],
       },
+      minWidth: {
+        half: "50%",
+      },
       borderWidth: {
         16: "16px",
       },

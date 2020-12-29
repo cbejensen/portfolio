@@ -1,29 +1,39 @@
-const pluginTailwindCSS = require('eleventy-plugin-tailwindcss')
-const md = require('markdown-it')({})
+const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
+const md = require("markdown-it")({});
+const iconsprite = require("./src/utils/iconsprite.js");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('src/assets')
-  eleventyConfig.addPassthroughCopy('src/admin/config.yml')
-  eleventyConfig.addPlugin(pluginTailwindCSS)
+  eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/admin/config.yml");
+  eleventyConfig.addPlugin(pluginTailwindCSS);
 
-  eleventyConfig.addShortcode('paragraphs', (paragraphs) =>
+  eleventyConfig.addShortcode("paragraphs", (paragraphs) =>
     paragraphs
-      .split('\n')
+      .split("\n")
       .filter(Boolean)
       .map((paragraph) => /*html*/ `<p class="mb-4 last:mb-0">${paragraph}</p>`)
-      .join(''),
-  )
+      .join("")
+  );
 
-  eleventyConfig.addWatchTarget('_tmp/style.css')
-  eleventyConfig.addWatchTarget('src/style.css')
+  eleventyConfig.addWatchTarget("src/assets");
+  eleventyConfig.addWatchTarget("src/style.css");
 
-  // eleventyConfig.setLibrary('md', md)
-  eleventyConfig.addFilter('md', string => md.render(string))
+  eleventyConfig.addFilter("md", (string) => md.render(string));
+
+  eleventyConfig.addShortcode(
+    "icon",
+    (
+      name
+    ) => `<svg class="icon icon--${name}" role="img" aria-hidden="true" width="24" height="24">
+  <use xlink:href="#icon-${name}"></use>
+</svg>`
+  );
+  eleventyConfig.addLiquidShortcode("iconsprite", iconsprite);
 
   return {
     dir: {
-      input: './src',
-      output: 'build',
+      input: "./src",
+      output: "build",
     },
-  }
-}
+  };
+};

@@ -6,6 +6,7 @@ skills:
   - AngularJS
   - Firebase
   - Bootstrap
+image: /assets/images/andale-logo.png
 ---
 
 I developed Andale on the side while working at Musician’s Friend as a tool for my team to look up product specs quickly.
