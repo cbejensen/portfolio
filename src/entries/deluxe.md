@@ -3,8 +3,9 @@ tags: experience
 title: Deluxe
 subtitle: SEO & design
 skills:
-  - Angular
-  - NgRx / Redux
+  - Vanilla JS
+  - Wordpress
+  - Shopify
 image: /assets/images/deluxe-logo.png
 ---
 
