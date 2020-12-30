@@ -6,8 +6,8 @@
   "sections": ["projects", "tutorials", "experience", "education"],
   "colors": {
     "primary": "#039BE5",
-    "primaryLight": "#63CCFF",
-    "accent": "#da7d2c"
+    "headerBoxStart": "#265EE8",
+    "headerBoxEnd": "#7B2CE9"
   },
   "socialIcons": [
     {
