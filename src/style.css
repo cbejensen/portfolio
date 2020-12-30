@@ -49,8 +49,8 @@ body > header {
   border-image-slice: 1;
   border-image-source: linear-gradient(
     to bottom right,
-    theme("colors.primary.DEFAULT"),
-    theme("colors.primary.light")
+    theme("colors['header-box-start']"),
+    theme("colors['header-box-end']")
   );
 }
 

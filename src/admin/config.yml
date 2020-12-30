@@ -41,12 +41,12 @@ collections:
                 label: Primary
                 widget: color
                 allowInput: true
-              - name: primaryLight
-                label: Primary Light
+              - name: headerBoxStart
+                label: Header Box Gradient - Start
                 widget: color
                 allowInput: true
-              - name: accent
-                label: Accent
+              - name: headerBoxEnd
+                label: Header Box Gradient - End
                 widget: color
                 allowInput: true
           - name: socialIcons
