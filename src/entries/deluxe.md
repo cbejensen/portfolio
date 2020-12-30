@@ -1,7 +1,7 @@
 ---
 tags: experience
 title: Deluxe
-subtitle: SEO & design
+subtitle: Apr 2016 - Nov 2018
 skills:
   - Vanilla JS
   - Wordpress
