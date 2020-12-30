@@ -49,6 +49,10 @@ collections:
                 label: Header Box Gradient - End
                 widget: color
                 allowInput: true
+              - name: profileBorder
+                label: Profile Border
+                widget: color
+                allowInput: true
           - name: socialIcons
             label: Social Icons
             label_singular: Social Icon

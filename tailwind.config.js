@@ -13,6 +13,7 @@ module.exports = {
         primary: "var(--color-primary)",
         "header-box-start": "var(--color-header-box-start)",
         "header-box-end": "var(--color-header-box-end)",
+        "profile-border": "var(--color-profile-border)",
         bg: colors.gray[100],
         black: colors.gray[900],
       },
