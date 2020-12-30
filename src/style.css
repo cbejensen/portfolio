@@ -8,7 +8,25 @@
     font-size: clamp(2rem, 8vw, 4rem);
   }
   h2 {
-    @apply text-5xl font-thin;
+    /* inline-block makes "width: 100%" on pseudo elements equal to text width */
+    @apply text-5xl font-thin relative inline-block;
+  }
+  h2:before,
+  h2:after {
+    @apply bg-primary;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: 4px;
+    z-index: -1;
+  }
+  h2:before {
+    width: 100vw;
+    transform: translateX(-100vw);
+  }
+  h2:after {
+    width: 100%;
   }
   h3 {
     @apply text-2xl font-medium;
@@ -43,8 +61,4 @@ body > header {
 
 .entry__content ul {
   @apply mt-2;
-}
-
-.entry__img {
-  max-width: min(50%, 200px);
 }

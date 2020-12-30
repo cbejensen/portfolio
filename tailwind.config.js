@@ -23,6 +23,9 @@ module.exports = {
       borderWidth: {
         16: "16px",
       },
+      flex: {
+        2: "2 2 0%",
+      },
     },
     fontFamily: {
       sans: ["Avenir Next", "Helvetica Neue", ...defaultTheme.fontFamily.sans],

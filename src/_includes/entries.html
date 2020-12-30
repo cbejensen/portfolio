@@ -1,6 +1,6 @@
 {% for entry in entries %}
-<section class="mt-8 first:mt-0 flex items-start">
-  <div class="flex-1 min-w-half">
+<section class="group mt-8 first:mt-0 flex">
+  <div class="flex-2 min-w-half md:mr-8">
     <h3>{{ entry.data.title }}</h3>
     <div class="text-gray-500 -mt-1">{{ entry.data.subtitle }}</div>
     <ul class="list-none whitespace-nowrap overflow-x-scroll">
@@ -16,11 +16,18 @@
     </div>
   </div>
   {% if entry.data.image %}
-  <img
-    src="{{ entry.data.image }}"
-    alt="{{ entry.data.imageAltText }}"
-    class="hidden md:block entry__img sm:ml-8 opacity-50 self-center"
-  />
+  <div
+    class="flex-1 justify-center relative hidden md:flex opacity-50 group-hover:opacity-100 transition-opacity duration-500"
+  >
+    <div class="absolute w-full h-full flex items-center justify-center">
+      <img
+        class="max-h-full max-w-sm"
+        src="{{ entry.data.image }}"
+        alt="{{ entry.data.imageAltText }}"
+        loading="lazy"
+      />
+    </div>
+  </div>
   {% endif %}
 </section>
 {% endfor %}

@@ -5,7 +5,6 @@ subtitle: Enterprise package tracking application
 skills:
   - Angular
   - NgRx / Redux
-image: /assets/images/fedex-logo.png
 ---
 
 Referred to as “the local Angular expert,” I have taken charge of many design decisions, both in performance and UX.
