@@ -3,10 +3,10 @@
   <div class="flex-2 min-w-half md:mr-8">
     <h3>{{ entry.data.title }}</h3>
     <div class="text-gray-500 -mt-1">{{ entry.data.subtitle }}</div>
-    <ul class="list-none whitespace-nowrap overflow-x-scroll">
+    <ul class="list-none whitespace-nowrap overflow-x-scroll mt-1 mb-3">
       {% for skill in entry.data.skills %}
       <span
-        class="inline-block mr-2 my-2 px-2 py-1 text-sm bg-primary text-bg p-2 rounded-md"
+        class="inline-block mr-2 px-2 py-1 text-xs bg-primary text-bg p-2 rounded-md"
         >{{ skill }}</span
       >
       {% endfor %}
