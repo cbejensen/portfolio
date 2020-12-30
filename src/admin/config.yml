@@ -41,18 +41,22 @@ collections:
                 label: Primary
                 widget: color
                 allowInput: true
+                enableAlpha: true
               - name: headerBoxStart
                 label: Header Box Gradient - Start
                 widget: color
                 allowInput: true
+                enableAlpha: true
               - name: headerBoxEnd
                 label: Header Box Gradient - End
                 widget: color
                 allowInput: true
+                enableAlpha: true
               - name: profileBorder
                 label: Profile Border
                 widget: color
                 allowInput: true
+                enableAlpha: true
           - name: socialIcons
             label: Social Icons
             label_singular: Social Icon
