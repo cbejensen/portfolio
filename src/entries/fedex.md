@@ -1,6 +1,6 @@
 ---
 tags: experience
-title: FedEx
+title: FedEx / STG
 subtitle: Jan 2019 - Present
 skills:
   - Angular
@@ -11,4 +11,4 @@ Referred to as “the local Angular expert,” I have taken charge of many desig
 
 - Refactored the app to use Nx architecture and tooling, which resulted in a host of DX and build time improvements.
 - Aligned code with CQRS methodologies.
-- Created UI components based off Material UI design.
+- Designed and developed UI based off Material UI design.
