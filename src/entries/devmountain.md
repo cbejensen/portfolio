@@ -1,7 +1,7 @@
 ---
 tags: education
 title: DevMountain
-subtitle: Front end bootcamp
+subtitle: Graduated Dec 2015
 skills:
   - React
   - AngularJS
