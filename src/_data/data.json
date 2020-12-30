@@ -3,7 +3,7 @@
   "lastName": "Jensen",
   "phone": "801-633-8055",
   "email": "cbejensen@gmail.com",
-  "sections": ["projects", "tutorials", "experience", "education"],
+  "sections": ["experience", "tutorials", "projects", "education"],
   "colors": {
     "primary": "#0F83C5",
     "headerBoxStart": "#0F83C5",
