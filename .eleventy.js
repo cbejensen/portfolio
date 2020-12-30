@@ -7,14 +7,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin/config.yml");
   eleventyConfig.addPlugin(pluginTailwindCSS);
 
-  eleventyConfig.addShortcode("paragraphs", (paragraphs) =>
-    paragraphs
-      .split("\n")
-      .filter(Boolean)
-      .map((paragraph) => /*html*/ `<p class="mb-4 last:mb-0">${paragraph}</p>`)
-      .join("")
-  );
-
   eleventyConfig.addWatchTarget("src/assets");
   eleventyConfig.addWatchTarget("src/style.css");
 

@@ -2,3 +2,4 @@ node_modules/
 build/
 _tmp/
 .DS_Store
+.vscode/settings.json

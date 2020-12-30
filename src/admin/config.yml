@@ -86,7 +86,6 @@ collections:
     description: Anything that you want to put on your portfolio
     folder: src/entries
     create: true
-    slug: "{{slug}}"
     fields:
       - label: Section
         name: tags
