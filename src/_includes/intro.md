@@ -1,3 +1,5 @@
-Hello! My name is Christian, and I am a web developer. I graduated from DevMountain - a coding bootcamp - in 2015, and have been building things ever since. I currently work with FedEx using Angular. I also have a lot of experience with React, and love JavaScript in general.
+Hello! My name is Steve, and I am good at **coding**.
 
-If you are interested in working with me, please [reach out](mailto:cbejensen@gmail.com)!
+If you don't believe me, look below! You will see many great information tidbits,
+
+lorem ipsum something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something.
