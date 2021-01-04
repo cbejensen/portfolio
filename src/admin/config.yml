@@ -86,6 +86,8 @@ collections:
     description: Anything that you want to put on your portfolio
     folder: src/entries
     create: true
+    editor:
+      preview: false
     fields:
       - label: Section
         name: tags
@@ -96,8 +98,30 @@ collections:
         display_fields: [sections.*]
         search_fields: [sections.*]
       - { label: Title, name: title, widget: string }
-      - { label: Subtitle, name: subtitle, widget: string }
-      - { label: Link, name: link, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - {
+          label: Start Date,
+          name: startDate,
+          widget: datetime,
+          format: YYYY-MM,
+          date_format: MMM YYYY,
+          required: false,
+        }
+      - {
+          label: End Date,
+          name: endDate,
+          widget: datetime,
+          format: YYYY-MM,
+          date_format: MMM YYYY,
+          required: false,
+          hint: Leave blank if you're still working on this project,
+        }
+      - { label: Link, name: link, widget: string, required: false }
       - { label: Skills, name: skills, widget: list }
-      - { label: Image, name: image, widget: image }
-      - { label: Image Alt Text, name: imageAltText, widget: string }
+      - { label: Image, name: image, widget: image, required: false }
+      - {
+          label: Image Alt Text,
+          name: imageAltText,
+          widget: string,
+          required: false,
+        }

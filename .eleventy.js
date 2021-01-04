@@ -12,6 +12,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("md", (string) => md.render(string));
 
+  eleventyConfig.addFilter("date", (string) => {
+    if (!string || !string.length) {
+      return "";
+    }
+    const [year, month] = string.split("-");
+    return new Intl.DateTimeFormat("en-US", {
+      month: "short",
+      year: "numeric",
+    }).format(new Date(year, month - 1));
+  });
+
   eleventyConfig.addShortcode(
     "icon",
     (

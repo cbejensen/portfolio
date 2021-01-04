@@ -2,6 +2,8 @@
 tags: education
 title: DevMountain
 subtitle: Graduated Dec 2015
+startDate: 2015-10
+endDate: 2015-12
 skills:
   - React
   - AngularJS

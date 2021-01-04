@@ -1,8 +1,19 @@
-{% for entry in entries %}
+{% for entry in entries reversed %}
 <section class="group mt-8 first-type:mt-0 flex">
   <div class="flex-2 min-w-half md:mr-8">
     <h3>{{ entry.data.title }}</h3>
-    <div class="text-gray-500 -mt-1">{{ entry.data.subtitle }}</div>
+    <div class="text-gray-500 -mt-1">
+      <!-- prettier-ignore -->
+      {% if entry.data.subtitle != nil and entry.data.subtitle != '' %}
+        {{ entry.data.subtitle }}
+      {% elsif entry.data.startDate != nil and entry.data.startDate != '' %}
+        {% if entry.data.endDate != nil and entry.data.endDate != '' %}
+          {{ entry.data.startDate | date }} - {{ entry.data.endDate | date }}
+        {% else %}
+          {{ entry.data.startDate | date }} - Present
+        {% endif %}
+      {% endif %}
+    </div>
     <ul class="list-none whitespace-nowrap overflow-x-scroll mt-1 mb-3">
       {% for skill in entry.data.skills %}
       <span

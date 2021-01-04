@@ -1,7 +1,8 @@
 ---
 tags: experience
 title: FedEx / STG
-subtitle: Jan 2019 - Present
+startDate: 2019-01
+endDate: ""
 skills:
   - Angular
   - NgRx / Redux

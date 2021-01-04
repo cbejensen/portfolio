@@ -1,7 +1,8 @@
 ---
 tags: experience
 title: Deluxe
-subtitle: Apr 2016 - Nov 2018
+startDate: 2016-04
+endDate: 2018-11
 skills:
   - Vanilla JS
   - Wordpress
