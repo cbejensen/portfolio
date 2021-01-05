@@ -1,7 +1,14 @@
 {% for entry in entries reversed %}
 <section class="group mt-8 first-type:mt-0 flex">
   <div class="flex-2 min-w-half md:mr-8">
-    <h3>{{ entry.data.title }}</h3>
+    <!-- prettier-ignore -->
+    <h3>
+      {% if entry.data.link != nil and entry.data.link != '' %}
+        <a class="no-underline text-current hover:text-primary" href="{{ entry.data.link }}" target="_blank">{{ entry.data.title }}</a>
+      {% else %}
+        {{ entry.data.title }}
+      {% endif %}
+    </h3>
     <div class="text-gray-500 -mt-1">
       <!-- prettier-ignore -->
       {% if entry.data.subtitle != nil and entry.data.subtitle != '' %}

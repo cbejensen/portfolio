@@ -7,6 +7,7 @@ skills:
   - Firebase
   - Bootstrap
 image: /assets/images/wishfull-logo.png
+link: https://wishfull.firebaseapp.com
 ---
 
 A web app for sharing wishlists, Wishfull is joyfully used by my family to this day.

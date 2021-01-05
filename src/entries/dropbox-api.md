@@ -6,6 +6,7 @@ endDate: 2019-03
 skills:
   - ES6
 image: /assets/images/dropbox-logo.png
+link: https://scrimba.com/learn/dropbox
 ---
 
 This is the first course I was asked to make for Scrimba, and required learning the Dropbox API from their documentation, which I had never used before.

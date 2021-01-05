@@ -16,9 +16,6 @@
   a {
     @apply underline text-primary;
   }
-  a.button {
-    @apply no-underline text-current;
-  }
   p + p {
     @apply mt-4;
   }

@@ -2,13 +2,15 @@
   <div class="leading-loose">
     <!-- <button>Resume</button> -->
     {% if data.phone %}
-    <a href="tel:{{ data.phone }}" class="button hover:text-primary mr-4"
+    <a
+      href="tel:{{ data.phone }}"
+      class="no-underline text-current hover:text-primary mr-4"
       >{{ data.phone }}</a
     >
     {% endif %} {% if data.email %}
     <a
       href="mailto:{{ data.email }}"
-      class="button hover:text-primary"
+      class="no-underline text-current hover:text-primary"
       target="_blank"
       >{{ data.email }}</a
     >

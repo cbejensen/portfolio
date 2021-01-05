@@ -8,6 +8,7 @@ skills:
   - Firebase
   - Bootstrap
 image: /assets/images/create-chefs-logo.png
+link: https://createchefs.com
 ---
 
 My mom teaches cooking classes and wanted something online where people could see class dates and register. Thus, Create Chefs was born.
