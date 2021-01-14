@@ -8,8 +8,8 @@ skills:
   - NgRx / Redux
 ---
 
-Referred to as “the local Angular expert,” I have taken charge of many design decisions of this enterprise application, both in performance and UX.
+Lead the front end development of an enterprise application with over 70 Angular modules.
 
-- Refactored the app to use Nx architecture and tooling, which resulted in a host of DX and build time improvements.
-- Aligned code with CQRS methodologies.
-- Designed and developed UI based off Material UI design.
+- Utilized Nrwl's NX tooling to organize code and cut build time dramatically.
+- Aligned with CQRS patterns.
+- Loosely followed Material UI design principles.
