@@ -1,7 +1,8 @@
 ---
 tags: projects
 title: Create Chefs
-subtitle: Cooking classes web site
+startDate: 2018-01
+endDate: 2020-09
 skills:
   - React
   - NodeJS

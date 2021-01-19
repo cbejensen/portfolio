@@ -1,7 +1,8 @@
 ---
 tags: projects
 title: Wishfull
-subtitle: A wishlist web app
+startDate: 2017-01
+endDate: 2018-12
 skills:
   - React
   - Firebase
