@@ -33,6 +33,13 @@ collections:
             label: Sections
             label_singular: Section
             widget: list
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: subtitle
+                label: Subtitle
+                widget: string
           - name: colors
             label: Colors
             widget: object

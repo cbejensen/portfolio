@@ -1,6 +1,9 @@
 {% for section in data.sections %}
 <section class="mt-20 first:mt-0">
-  <h2 class="mb-8">{{ section }}</h2>
-  {% assign entries = collections[section] %} {% include entries.html %}
+  <h2 class="mb-8">{{ section.title }}</h2>
+  {% if section.subtitle %}
+  <p class="-mt-4 mb-8 text-lg font-thin">{{ section.subtitle }}</p>
+  {% endif %} {% assign entries = collections[section.title] %} {% include
+  entries.html %}
 </section>
 {% endfor %}

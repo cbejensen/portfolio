@@ -3,7 +3,21 @@
   "lastName": "Jensen",
   "phone": "801-633-8055",
   "email": "cbejensen@gmail.com",
-  "sections": ["experience", "tutorials", "projects", "education"],
+  "sections": [
+    {
+      "title": "experience"
+    },
+    {
+      "title": "tutorials"
+    },
+    {
+      "title": "projects",
+      "subtitle": "Web apps that I've built on my own"
+    },
+    {
+      "title": "education"
+    }
+  ],
   "colors": {
     "primary": "#0F83C5",
     "headerBoxStart": "#0F83C5",
