@@ -4,7 +4,7 @@
     <!-- prettier-ignore -->
     <h3>
       {% if entry.data.link != nil and entry.data.link != '' %}
-        <a class="no-underline text-current hover:text-primary" href="{{ entry.data.link }}" target="_blank">{{ entry.data.title }}</a>
+        <a class="no-underline text-current hover:text-primary" href="{{ entry.data.link }}" target="_blank">{{ entry.data.title }} 🔗</a>
       {% else %}
         {{ entry.data.title }}
       {% endif %}
