@@ -1,4 +1,4 @@
-<header class="relative border-solid border-16 p-8 md:p-16">
+<header class="relative border-solid border-16 p-8 -m-8 md:p-16">
   <h1
     class="text-center md:text-left md:whitespace-nowrap md:block bg-bg top-0 md:absolute md:px-4 transform md:-translate-y-6 md:-translate-x-4 md:leading-8"
   >
@@ -6,9 +6,13 @@
   </h1>
   <figure class="flex flex-col md:flex-row-reverse items-center">
     <div
-      class="profile-image__wrap flex-1 p-1 m-auto my-8 md:m-0 border-solid border-4 border-r-4 border-profile-border rounded-full"
+      class="profile-image__wrap flex-1 p-1 my-8 md:m-0 border-solid border-4 border-r-4 border-profile-border rounded-full"
     >
-      <img class="rounded-full" src="assets/images/me.avif" alt="" />
+      <img
+        class="rounded-full"
+        src="assets/images/me.webp"
+        alt="A profile picture of Christian Jensen"
+      />
     </div>
     <div class="md:mr-8 leading-loose max-w-prose text-lg">
       {% capture intro %}{% include intro.md %}{% endcapture %} {{ intro | md }}
