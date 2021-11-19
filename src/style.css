@@ -33,37 +33,6 @@
   .entry__content ul {
     @apply mt-2;
   }
-
-  /* Hides the scrollbar while allowing scrolling */
-  /* https://stackoverflow.com/a/49278385/5253897 */
-  .no-scrollbar {
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-  }
-  .no-scrollbar::-webkit-scrollbar {
-    /* WebKit */
-    @apply w-0 h-0;
-  }
-
-  /* Some additional styles to make it more obvious you can scroll */
-  .no-scrollbar--fade-wrap {
-    @apply relative -mx-3;
-  }
-  .no-scrollbar--fade {
-    @apply px-3;
-  }
-  .no-scrollbar--fade:before,
-  .no-scrollbar--fade:after {
-    content: "";
-    @apply block absolute top-0 bottom-0 w-3;
-  }
-  .no-scrollbar--fade:before {
-    @apply left-0 bg-gradient-to-r from-bg to-transparent;
-  }
-  .no-scrollbar--fade:after {
-    @apply right-0 bg-gradient-to-l from-bg to-transparent;
-  }
 }
 
 body > header {

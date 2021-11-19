@@ -21,19 +21,17 @@
         {% endif %}
       {% endif %}
     </div>
-    <div class="no-scrollbar--fade-wrap">
-      <ul
-        class="list-none whitespace-nowrap mt-1 pb-3 no-scrollbar no-scrollbar--fade"
-      >
+    <div>
+      <ul class="list-none mt-1">
         {% for skill in entry.data.skills %}
         <span
-          class="inline-block mr-2 px-2 py-1 text-xs bg-primary text-bg p-2 rounded-md"
+          class="inline-block mr-2 mb-2 px-2 py-1 text-xs bg-primary text-bg p-2 rounded-md"
           >{{ skill }}</span
         >
         {% endfor %}
       </ul>
     </div>
-    <div class="entry__content flex-1 max-w-prose">
+    <div class="entry__content mt-1 flex-1 max-w-prose">
       {{ entry.templateContent }}
     </div>
   </div>
