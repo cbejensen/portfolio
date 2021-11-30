@@ -1,5 +1,5 @@
 ---
-tags: tutorials
+tags: projects
 title: Dropbox API
 subtitle: API interaction via modern JavaScript
 endDate: 2019-03

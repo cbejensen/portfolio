@@ -1,5 +1,5 @@
 ---
-tags: tutorials
+tags: projects
 title: React Hooks
 subtitle: Learn React hooks in 1 hour
 skills:
