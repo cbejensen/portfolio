@@ -13,5 +13,5 @@ link: https://wishfull.firebaseapp.com
 
 A web app for sharing wishlists, Wishfull is joyfully used by my family to this day.
 
-- Complex view logic, including wish fulfillments that are visible to everyone but the one who made the wish.
-- Real time updates.
+- Complex view logic and authentication-based features.
+- Real time updates with Firebase.

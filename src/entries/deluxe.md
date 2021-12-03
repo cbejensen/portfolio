@@ -9,7 +9,7 @@ skills:
   - Shopify
 ---
 
-As the sole web developer, it was my responsibility to make any changes a client might request on their existing web site. This exposed me to a vast array of content management systems, coding styles, and development challenges.
+Applied a vast array of enhancements across a multitude of sites as the sole developer, usually using vanilla JavaScript.
 
-- Implemented various SEO improvements.
+- Implemented various SEO improvements, including Google Analytics.
 - Increased site speed via caching, image optimization, minification, and more.
